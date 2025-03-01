@@ -27,7 +27,7 @@ const TodoApp = () => {
   };
 
   return (
-    <div className="bg-black text-white max-w-sm mx-auto bg-white p-6 rounded-lg shadow-lg">
+    <div className=" max-w-sm mx-auto p-6 rounded-lg shadow-lg bg-white text-black">
       <h1 className="text-2xl font-bold mb-4 text-center">Todo App</h1>
 
       {/* Task Input */}
@@ -36,7 +36,7 @@ const TodoApp = () => {
           type="text"
           value={task}
           onChange={(e) => setTask(e.target.value)}
-          className="flex-1 p-2 border border-gray-300 rounded-l-md"
+          className="border-2 border-black placeholder:text-black flex-1 p-2 border border-gray-300 rounded-l-md"
           placeholder="Add a new task"
         />
         <button
