@@ -27,7 +27,7 @@ const TodoApp = () => {
   };
 
   return (
-    <div className="max-w-sm mx-auto bg-white p-6 rounded-lg shadow-lg">
+    <div className="bg-black text-white max-w-sm mx-auto bg-white p-6 rounded-lg shadow-lg">
       <h1 className="text-2xl font-bold mb-4 text-center">Todo App</h1>
 
       {/* Task Input */}
