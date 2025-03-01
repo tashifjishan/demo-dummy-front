@@ -71,6 +71,8 @@ const TodoApp = () => {
           </li>
         ))}
       </ul>
+
+      {JSON.stringify(users)}
     </div>
   );
 };
