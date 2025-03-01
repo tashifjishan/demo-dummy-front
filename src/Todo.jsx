@@ -12,8 +12,10 @@ const TodoApp = () => {
 
   const handleAddTask = () => {
     if (task.trim() === "") return; // Prevent adding empty tasks
+    if (users){
     setTodos([...todos, { id: Date.now(), text: task, completed: false }]);
     setTask(""); // Clear the input field
+    }
   };
 
   const handleToggleComplete = (id) => {
@@ -72,7 +74,7 @@ const TodoApp = () => {
         ))}
       </ul>
 
-      {JSON.stringify(users)}
+      
     </div>
   );
 };
